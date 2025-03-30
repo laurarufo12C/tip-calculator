@@ -8,14 +8,45 @@
 }
 
 :root {
-    --bg-body: #c5e4e7;
-    --bg-main: #fff;
+    --jagged-ice: #c5e4e7;
+    --white: #fff;
+    --sherpa-blue: #00474b;
+    --greyish-turquoise: #5e7a7d;
+    --topaz: #26c2ae;
+    --regent-grey: #7f9d9f;
+    --squeeze: #f3f9fa;
+    font-size: 62.5%;
 }
 
 body {
-    background-color: var(--bg-body)
+    font-size: 1.6rem;
+    background-color: var(--jagged-ice);
 }
 
 main {
-    background-color: var(--bg-main);
+    background-color: var(--white);
+    padding: 3.2rem 2.4rem;
+
+    border-radius: 2.5rem 2.5rem 0 0;
+}
+
+header {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    padding-inline: 0.8rem;
+
+    strong {
+        color: var(--greyish-turquoise);
+    }
+
+    .input-box {
+        margin-top: 0.6rem;
+        background-color: var(--squeeze);
+    }
 }
