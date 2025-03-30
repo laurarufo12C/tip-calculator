@@ -16,6 +16,7 @@
     --regent-grey: #7f9d9f;
     --squeeze: #f3f9fa;
     --beetle-green: #547878;
+    --water-leaf: #9fe8df;
     font-size: 62.5%;
 }
 
@@ -160,4 +161,58 @@ header {
         text-transform: uppercase;
     }
     
+}
+
+@media(min-width: 920px) {
+    header {
+        padding-top: 5rem;
+    }
+
+    main {
+        display: flex;
+        max-width: 92rem;
+        margin-inline: auto;
+        padding: 4.8rem;
+        border-radius: 2.5rem;
+        gap: 4.8rem;
+
+        section {
+            width: 100%;
+        }
+
+        .info {
+            .tip div {
+                grid-template-columns: repeat(3, 1fr);
+
+                button:hover {
+                    background: var(--topaz);
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button {
+        display: none;
+    }
+
+    .results {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 4rem;
+
+        .amount strong,
+        .total strong {
+            font-size: 4.8rem;
+        }
+
+        button:hover {
+            background: var(--water-leaf);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    }
 }
