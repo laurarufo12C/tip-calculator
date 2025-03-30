@@ -15,6 +15,7 @@
     --topaz: #26c2ae;
     --regent-grey: #7f9d9f;
     --squeeze: #f3f9fa;
+    --beetle-green: #547878;
     font-size: 62.5%;
 }
 
@@ -41,6 +42,10 @@ header {
 .info {
     padding-inline: 0.8rem;
 
+    div {
+        margin-bottom: 3.2rem;
+    }
+
     strong {
         color: var(--greyish-turquoise);
     }
@@ -48,5 +53,68 @@ header {
     .input-box {
         margin-top: 0.6rem;
         background-color: var(--squeeze);
+        display: flex;
+        align-items: center;
+        padding: 0.6rem 1.8rem;
+        border-radius: 0.5rem;
+
+        input {
+            border: none;
+            background: transparent;
+            text-align: right;
+            width: 100%;
+            font-size: 2.4rem;
+            outline: none;
+            font-weight: 700;
+            color: var(--sherpa-blue);
+        }
+
+        input::placeholder {
+            color: var(--sherpa-blue);
+            opacity: 0.35;
+        }
+
+        &:has(input:focus) {
+            outline: 2px solid var(--topaz);
+        }
+    }
+    
+    .tip {
+        div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.6rem;
+            margin-top: 1.6rem;
+
+            input {
+                width: 100%;
+                font-size: 2.4rem;
+                text-align: center;
+                border: none;
+                background: var(--squeeze);
+                border-radius: 0.5rem;
+                padding-block: 0.6rem;
+                font-weight: 700;
+                color: var(--sherpa-blue);
+                
+                &::placeholder {
+                    color: var(--beetle-green);
+                }
+
+                &:focus {
+                    outline: 2px solid var(--topaz);
+                }
+            }
+
+            button {
+                font-size: 2.4rem;
+                background: var(--sherpa-blue);
+                color: var(--white);
+                font-weight: 700;
+                border: none;
+                padding-block: 0.6rem;
+                border-radius: 0.5rem;
+            }
+        }
     }
 }
