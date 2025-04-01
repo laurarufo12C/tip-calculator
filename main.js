@@ -57,3 +57,18 @@ function calculateResults() {
         strongTotal.innerText = `$${totalPerson.toFixed(2)}`
     }
 }
+
+function reset() {
+    document.querySelector("#bill").value = ""
+    bill = 0
+
+    document.querySelector("#people").value = ""
+    numberOfPeople = 0
+
+    document.querySelector("#custom-tip").value = ""
+    removeClassButtonSelected()
+    tipPercentage = 0
+
+    document.querySelector(".amount strong").innerText = "$0.00"
+    document.querySelector(".total strong").innerText = "$0.00"
+}
